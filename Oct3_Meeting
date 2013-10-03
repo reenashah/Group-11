@@ -7,6 +7,7 @@
 I. Curating the Data
 a) Learning Style Data
   - eliminate unusual data (count as null)
+      -include them as "participants that did not provide numerical data", but exclude them from the analysis (https://github.com/stat157/questionnaire/issues/4)
       - this way we will not run into any skewed biases 
   - Suggestion: create a matrix
     - 4 columns (one for each category); the students' results as each of the entries
