@@ -31,9 +31,17 @@ II. Analyzing & Visualizing the Data
 - Learning Style Data
     - Suggestion: box and whisker plot
         - take note of median, mean, range of results
+    
       
 - Career Goal Data
     - Suggestion: stacked bar chart. Each title represents a distinct category, and the 4 stratifications are shown.
+    - [Analyzing Categorical Data](http://www.datavis.ca/papers/casm/casm.pdf)
+
+**Graphs in Python**
+  - [bargraphs/stacked.py](http://pyx.sourceforge.net/examples/bargraphs/stacked.html)
+  - [bargraphs/errors.py](http://pyx.sourceforge.net/examples/bargraphs/errors.html)
+  - [Pie Chart](http://www.advsofteng.com/doc/cdpydoc/threedpie.htm)
+  - Mosaic N-Way Table: [possible on python?]
     
 III. Presentation
 -------------
