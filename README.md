@@ -34,7 +34,9 @@ II. Analyzing & Visualizing the Data
     
       
 - Career Goal Data
-    - Suggestion: stacked bar chart. Each title represents a distinct category, and the 4 stratifications are shown.
+    - Suggestion: 
+        - stacked bar chart 
+        - Each title represents a distinct category, and the 4 stratifications are shown.
     - [Analyzing Categorical Data](http://www.datavis.ca/papers/casm/casm.pdf)
 
 **Graphs in Python**
