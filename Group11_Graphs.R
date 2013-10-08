@@ -190,10 +190,14 @@ keeporderedcareergoals = orderedcareergoals[c(2,4,5,7,8,10,11,13,15,16,19,20,21,
 #-----------------------------------------------------------------------------------------------
 
 par(mfrow=c(1, 1))
+png(filename="Class_Boxplot.png")
 b1=boxplot(Visual, Aural, Readwrite, Kinesthetic, names = c("Visual", "Aural", "Readwrite", "Kinesthetic"), main = "Distribution of VAR Scores", col=c("red", "sienna", "palevioletred1", "royalblue1"), ylab="VAR Score")
-png(filename="test.png")
-barplot(careercounts[1:8], names.arg=careernames[1:8], col="blue", main= "Top 8 Career Goals in Statistics 157", xlab = "Career Goal", ylab = "Frequency", cex.axis=0.8, cex.names=0.6)
 dev.off()
+
+png(filename="Class_Barplot.png")
+barplot(careercounts[1:8], names.arg=careernames[1:8], col=c("springgreen2", "snow3", "wheat3", "thistle3", "sienna2", "tan", "slategray3","yellowgreen"), main= "Top 8 Career Goals in Statistics 157", xlab = "Career Goal", ylab = "Frequency", cex.axis=0.8, cex.names=0.6)
+dev.off()
+
 #For each of the top 8 Career Goals, let's dissect how the learning styles differ:
 allavgnames=c("actuary", "company", "science", "skills", "software", "school", "engineering")
 Vavg = c()
@@ -250,5 +254,7 @@ alldataboxplot = data.frame(allavgnames, Vavg, Aavg, Ravg, Kavg)
 data.mat=as.matrix(alldataboxplot[,2:5])
 rownames(data.mat)=alldataboxplot$allavgnames
 data.mat=t(data.mat)
-barplot(data.mat, beside=TRUE, col=c("skyblue", "thistle", "turquoise", "rosybrown2"), cex.names=0.6, main="Average VARK Scores by Career Goal", ylab = "Average Raw Score", xlab="Career Goal")
-legend("topleft",rownames(data.mat), legend=c("Visual", "Aural", "Readwrite", "Kinesthetic"),fill=c("skyblue", "thistle", "turquoise", "rosybrown2"), cex=0.45, title="VARK Legend")
+png(filename="Correlated_Barplot.png")
+barplot(data.mat, beside=TRUE, col=c("skyblue", "thistle", "turquoise", "rosybrown2"), cex.names=0.9, main="Average VARK Scores by Career Goal", ylab = "Average Raw Score", xlab="Career Goal")
+legend("topleft",rownames(data.mat), legend=c("Visual", "Aural", "Readwrite", "Kinesthetic"),fill=c("skyblue", "thistle", "turquoise", "rosybrown2"), cex=0.9, title="VARK Legend")
+dev.off()
