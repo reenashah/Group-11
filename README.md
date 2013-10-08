@@ -2,6 +2,8 @@
 
 ## Instructions
 
+Ignore any .ipynb files that aren't named Final_2.md
+
 ### Dependencies
 Please download the following dependencies for this project in your VM running the latest release of Ubuntu:
 
