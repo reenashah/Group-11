@@ -191,7 +191,7 @@ keeporderedcareergoals = orderedcareergoals[c(2,4,5,7,8,10,11,13,15,16,19,20,21,
 
 par(mfrow=c(1, 1))
 png(filename="Class_Boxplot.png")
-b1=boxplot(Visual, Aural, Readwrite, Kinesthetic, names = c("Visual", "Aural", "Readwrite", "Kinesthetic"), main = "Distribution of VAR Scores", col=c("red", "sienna", "palevioletred1", "royalblue1"), ylab="VAR Score", cex.axis=1.3)
+b1=boxplot(Visual, Aural, Readwrite, Kinesthetic, names = c("Visual", "Aural", "Readwrite", "Kinesthetic"), main = "Distribution of VARK Scores", col=c("red", "sienna", "palevioletred1", "royalblue1"), ylab="VAR Score", cex.axis=1.3)
 dev.off()
 
 png(filename="Class_Barplot.png")
