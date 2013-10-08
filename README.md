@@ -15,3 +15,5 @@ Please download the following dependencies for this project in your VM running t
 `sudo pip install simplejson`
 `sudo pip install -U pytagcloud`
 
+#Please look at presentation.ipynb for the final presentation
+
